@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from '../src/components/header'
+
+import { Container } from './styles'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <Container> 
+      <Header />   
+      <div className="App">     
+        <div className="infoContent">
+          <h1>Música para todos.</h1>
+          <h4>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.</h4>
+          <a href="/br/download/" id="generic-btn-premium"className="btnGreen">
+							OBTENHA O SPOTIFY FREE
+					</a>
+        </div>
+      </div>
+
+      </Container>
+    </>
   );
 }
 
